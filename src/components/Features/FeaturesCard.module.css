@@ -1,0 +1,65 @@
+.featuresCard {
+  box-shadow: 0px 0px 5px 0px #0000001a;
+  border-radius: 12px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  width: 32%;
+}
+.icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #f3f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+  transition: var(--transition);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1; /* Number of lines to show */
+  line-clamp: 1;
+  text-overflow: ellipsis;
+  margin-bottom: 16px;
+}
+.description {
+  margin-bottom: 20px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}
+.viewMore {
+  color: #ce0202;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+  border: none;
+}
+.viewMore:hover {
+  padding-left: 8px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .featuresCard {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .featuresCard {
+    width: 100%;
+  }
+}
