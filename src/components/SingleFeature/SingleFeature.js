@@ -11,14 +11,16 @@ const SingleFeature = () => {
   const [loading, setLoading] = useState(true);
 
   const router = useRouter();
-  const { slug } = router.query;
+  const { asPath } = router;
+  const slug = asPath.replace(/^\/(.*)$/, "$1");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
         const result = hospitalData;
-        const findItem = result?.find((item) => item.slug === slug);
+        const findItem = hospitalData?.find((item) => item.slug === slug);
+
         setSingleFeatureData(findItem);
       } catch (err) {
         setError("Failed to load data");
@@ -32,9 +34,11 @@ const SingleFeature = () => {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
+
+  console.log("singleFeatureData", singleFeatureData);
   return (
     <div className={styles.features}>
-      <div className="container">
+      <div>
         <h1 className={styles.headTitle}>Single Hospital Management Feature</h1>
         <div className={styles.featuresCards}>
           <div className={styles.icon}>

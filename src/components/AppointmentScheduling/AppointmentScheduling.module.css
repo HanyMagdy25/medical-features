@@ -1,0 +1,145 @@
+.form {
+  margin-top: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 5px 0px #0000001a;
+  padding: 1.5rem;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: fit-content;
+  /* width: 49%; */
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: bold;
+}
+.input {
+  padding: 16px 16px;
+  border-radius: 10px;
+  border: 0.5px solid #42546680;
+  outline: none;
+  min-width: 300px;
+}
+.submitBtn {
+  padding: 16px 16px;
+  border-radius: 10px;
+  border: 0.5px solid #42546680;
+  outline: none;
+  min-width: 300px;
+  background-color: #2d3291;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 49%;
+  width: fit-content;
+}
+
+.table caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #2d3291;
+  color: #fff;
+  text-align: center;
+}
+
+.table thead {
+  background-color: #2d3291;
+  color: #fff;
+}
+
+.table thead th {
+  padding: 12px 15px;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:hover {
+  background-color: #e8f4ff;
+}
+
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  border: 1px solid #ddd;
+}
+
+.deleteBtn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: #e60000;
+}
+
+.deleteBtn i {
+  font-size: 1rem;
+}
+
+.deleteBtn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 77, 77, 0.8);
+}
+
+.editBtn {
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 5px;
+}
+
+.editBtn:hover {
+  background-color: #e0a800;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}

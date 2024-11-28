@@ -35,8 +35,8 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 3; /* Number of lines to show */
-  line-clamp: 3;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  line-clamp: 2;
   text-overflow: ellipsis;
 }
 .viewMore {
