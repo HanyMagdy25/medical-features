@@ -51,14 +51,7 @@ const Registration = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <h1>
-        {isLogin
-          ? "Login"
-          : activeTab === "patient"
-          ? "Patient Registration"
-          : "Doctor Registration"}
-      </h1>
+    <div className={styles.patientRegistration}>
       <div className={styles.tabs}>
         {!isLogin && (
           <>
@@ -80,15 +73,16 @@ const Registration = () => {
             </button>
           </>
         )}
-        <button
-          className={styles.toggleLoginBtn}
-          onClick={() => setIsLogin(!isLogin)}
-        >
-          {isLogin ? "Go to Registration" : "Go to Login"}
-        </button>
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form}>
+        <h1 className={styles.title}>
+          {isLogin
+            ? "Login"
+            : activeTab === "patient"
+            ? "Patient Registration"
+            : "Doctor Registration"}
+        </h1>
         {!isLogin && (
           <div className={styles.formGroup}>
             <label htmlFor="name" className={styles.label}>
@@ -97,6 +91,7 @@ const Registration = () => {
             <input
               id="name"
               type="text"
+              placeholder="Enter your name"
               value={formData.name}
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -114,6 +109,7 @@ const Registration = () => {
           <input
             id="email"
             type="email"
+            placeholder="Enter your email"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
@@ -130,6 +126,7 @@ const Registration = () => {
           <input
             id="password"
             type="password"
+            placeholder="Enter your password"
             value={formData.password}
             onChange={(e) =>
               setFormData({ ...formData, password: e.target.value })
@@ -168,6 +165,7 @@ const Registration = () => {
             <input
               id="specialty"
               type="text"
+              placeholder="Enter your specialty"
               value={formData.specialty}
               onChange={(e) =>
                 setFormData({ ...formData, specialty: e.target.value })
@@ -178,13 +176,23 @@ const Registration = () => {
           </div>
         )}
 
+        <p className={styles.toggleLoginText}>
+          {isLogin ? "Don't have an account?" : "Already have an account?"}
+          <button
+            className={styles.toggleLoginBtn}
+            onClick={() => setIsLogin(!isLogin)}
+          >
+            {isLogin ? "Register" : "Login"}
+          </button>
+        </p>
+
         <button type="submit" className={styles.submitBtn}>
           {isLogin ? "Login" : "Register"}
         </button>
       </form>
 
       {/* Toast Notifications */}
-      <Toaster position="top-right" reverseOrder={false} />
+      {/* <Toaster position="top-right" reverseOrder={false} /> */}
     </div>
   );
 };

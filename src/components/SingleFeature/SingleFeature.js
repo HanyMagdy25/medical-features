@@ -35,16 +35,15 @@ const SingleFeature = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
-  console.log("singleFeatureData", singleFeatureData);
   return (
     <div className={styles.features}>
       <div>
-        <h1 className={styles.headTitle}>Single Hospital Management Feature</h1>
+        {/* <h1 className={styles.headTitle}>Single Hospital Management Feature</h1> */}
         <div className={styles.featuresCards}>
-          <div className={styles.icon}>
+          {/* <div className={styles.icon}>
             <UserIcon />
-          </div>
-          <h2 className={styles.title}>{singleFeatureData?.feature}</h2>
+          </div> */}
+          <h1 className={styles.title}>{singleFeatureData?.feature}</h1>
           <p className={styles.description}>{singleFeatureData?.description}</p>
         </div>
       </div>
