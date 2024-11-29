@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import SingleFeature from "@/src/components/SingleFeature/SingleFeature";
-import Registration from "@/src/components/PatientRegistration/PatientRegistration";
+import PrescriptionManagement from "@/src/components/PrescriptionManagement/PrescriptionManagement";
 // import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +19,7 @@ export default function SingleFeaturePage() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className="container">
           <SingleFeature />
-          <Registration />
+          <PrescriptionManagement />
         </div>
       </main>
     </>

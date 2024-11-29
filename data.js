@@ -47,82 +47,82 @@ const hospitalFeatures = [
       "Patients can view their bills and pay online through the application.",
     subModules: ["Bill generation", "Payment processing", "Payment history"],
   },
-  //   {
-  //     feature: "Reports and Analytics",
-  //     slug: generateSlug("Reports and Analytics"),
-  //     description:
-  //       "The application can generate reports and analytics to provide insights into patient demographics, appointment history, and revenue.",
-  //     subModules: [
-  //       "Patient demographics report",
-  //       "Appointment history report",
-  //       "Revenue report",
-  //     ],
-  //   },
-  //   {
-  //     feature: "Prescription Management",
-  //     slug: generateSlug("Prescription Management"),
-  //     description:
-  //       "Doctors can create and manage prescriptions for patients. Patients can view their prescriptions and request refills.",
-  //     subModules: [
-  //       "Prescription creation",
-  //       "Prescription history",
-  //       "Refill requests",
-  //     ],
-  //   },
-  //   {
-  //     feature: "Lab and Test Results",
-  //     slug: generateSlug("Lab and Test Results"),
-  //     description:
-  //       "Patients can view their lab and test results through the application. Doctors can view and manage the results as needed.",
-  //     subModules: [
-  //       "Test result upload",
-  //       "Test result viewing",
-  //       "Result management",
-  //     ],
-  //   },
-  //   {
-  //     feature: "Electronic Health Records",
-  //     slug: generateSlug("Electronic Health Records"),
-  //     description:
-  //       "The application can store and manage electronic health records for patients, including medical history, diagnoses, and treatment plans.",
-  //     subModules: ["EHR creation", "EHR updates", "EHR viewing"],
-  //   },
-  //   {
-  //     feature: "Inventory Management",
-  //     slug: generateSlug("Inventory Management"),
-  //     description:
-  //       "The application can manage inventory for medical supplies and equipment, including tracking usage and reordering as needed.",
-  //     subModules: ["Inventory tracking", "Reorder management", "Usage reports"],
-  //   },
-  //   {
-  //     feature: "Staff Management",
-  //     slug: generateSlug("Staff Management"),
-  //     description:
-  //       "The application can manage staff schedules, payroll, and performance evaluations.",
-  //     subModules: [
-  //       "Staff scheduling",
-  //       "Payroll management",
-  //       "Performance evaluation",
-  //     ],
-  //   },
-  //   {
-  //     feature: "Telemedicine",
-  //     slug: generateSlug("Telemedicine"),
-  //     description:
-  //       "The application can support telemedicine appointments, allowing patients to connect with doctors remotely.",
-  //     subModules: [
-  //       "Telemedicine appointment booking",
-  //       "Video conferencing",
-  //       "Remote diagnosis",
-  //     ],
-  //   },
-  //   {
-  //     feature: "Emergency Management",
-  //     slug: generateSlug("Emergency Management"),
-  //     description:
-  //       "The application can provide emergency alerts and notifications to staff and patients in case of a crisis or disaster.",
-  //     subModules: ["Emergency alerts", "Disaster management", "Crisis response"],
-  //   },
+  {
+    feature: "Reports and Analytics",
+    slug: generateSlug("Reports and Analytics"),
+    description:
+      "The application can generate reports and analytics to provide insights into patient demographics, appointment history, and revenue.",
+    subModules: [
+      "Patient demographics report",
+      "Appointment history report",
+      "Revenue report",
+    ],
+  },
+  {
+    feature: "Prescription Management",
+    slug: generateSlug("Prescription Management"),
+    description:
+      "Doctors can create and manage prescriptions for patients. Patients can view their prescriptions and request refills.",
+    subModules: [
+      "Prescription creation",
+      "Prescription history",
+      "Refill requests",
+    ],
+  },
+  {
+    feature: "Lab and Test Results",
+    slug: generateSlug("Lab and Test Results"),
+    description:
+      "Patients can view their lab and test results through the application. Doctors can view and manage the results as needed.",
+    subModules: [
+      "Test result upload",
+      "Test result viewing",
+      "Result management",
+    ],
+  },
+  {
+    feature: "Electronic Health Records",
+    slug: generateSlug("Electronic Health Records"),
+    description:
+      "The application can store and manage electronic health records for patients, including medical history, diagnoses, and treatment plans.",
+    subModules: ["EHR creation", "EHR updates", "EHR viewing"],
+  },
+  {
+    feature: "Inventory Management",
+    slug: generateSlug("Inventory Management"),
+    description:
+      "The application can manage inventory for medical supplies and equipment, including tracking usage and reordering as needed.",
+    subModules: ["Inventory tracking", "Reorder management", "Usage reports"],
+  },
+  {
+    feature: "Staff Management",
+    slug: generateSlug("Staff Management"),
+    description:
+      "The application can manage staff schedules, payroll, and performance evaluations.",
+    subModules: [
+      "Staff scheduling",
+      "Payroll management",
+      "Performance evaluation",
+    ],
+  },
+  {
+    feature: "Telemedicine",
+    slug: generateSlug("Telemedicine"),
+    description:
+      "The application can support telemedicine appointments, allowing patients to connect with doctors remotely.",
+    subModules: [
+      "Telemedicine appointment booking",
+      "Video conferencing",
+      "Remote diagnosis",
+    ],
+  },
+  {
+    feature: "Emergency Management",
+    slug: generateSlug("Emergency Management"),
+    description:
+      "The application can provide emergency alerts and notifications to staff and patients in case of a crisis or disaster.",
+    subModules: ["Emergency alerts", "Disaster management", "Crisis response"],
+  },
 ];
 
 export default hospitalFeatures;

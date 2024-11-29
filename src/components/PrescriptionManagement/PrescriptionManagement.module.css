@@ -57,6 +57,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 49%;
+  width: fit-content;
 }
 
 .table caption {
@@ -143,71 +144,51 @@
   gap: 10px;
 }
 
-/* Tabs Section */
+.patientSelect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.select {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   gap: 10px;
   width: fit-content;
-  margin-top: 30px;
 }
 
 .tabButton {
   flex: 1;
   padding: 10px 15px;
   border: 2px solid #ddd;
-  border-radius: 6px;
+  border-radius: 5px;
   background-color: #f9f9f9;
   font-size: 14px;
   font-weight: 600;
   color: #555;
-  text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
   white-space: nowrap;
-  outline: none;
-}
-
-.tabButton:hover {
-  background-color: #f0f0f0;
-  border-color: #aaa;
+  transition: all 0.3s ease;
 }
 
 .tabButton.active {
   background-color: #4caf50;
   color: white;
   border-color: #4caf50;
-}
-
-/* Toggle Login Button */
-.toggleLoginBtn {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-.toggleLoginBtn:hover {
-  background-color: #0056b3;
-}
-
-/* Dropdown Styling */
-.select {
-  /* appearance: none; */
-  background-color: #ffffff;
-  cursor: pointer;
-  position: relative;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  outline: none;
-  border-radius: 12px;
 }
