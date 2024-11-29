@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import SingleFeature from "@/src/components/SingleFeature/SingleFeature";
 import AppointmentScheduling from "@/src/components/AppointmentScheduling/AppointmentScheduling ";
+import { Toaster } from "react-hot-toast";
 // import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,6 +22,8 @@ export default function SingleFeaturePage() {
           <SingleFeature />
           <AppointmentScheduling />
         </div>
+        {/* Toast Notifications */}
+        <Toaster position="top-right" reverseOrder={false} />
       </main>
     </>
   );

@@ -1,8 +1,16 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  gap: 30px;
+}
 .form {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-bottom: 30px;
   border-radius: 14px;
   box-shadow: 0px 0px 5px 0px #0000001a;
-  padding: 1.5rem;
+  padding: 1.5rem 1.6rem;
   display: flex;
   /* justify-content: flex-start; */
   align-items: flex-start;
@@ -14,63 +22,68 @@
 .formGroup {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .label {
   margin-bottom: 8px;
   font-size: 0.9rem;
-  color: #555;
-  font-weight: bold;
+  color: #292929;
+  font-weight: 600;
+  position: relative;
+}
+.label::after {
+  position: absolute;
+  content: "*";
+  color: #292929;
+  font-size: 0.9rem;
+  top: 0;
 }
 .input {
-  padding: 16px 16px;
-  border-radius: 10px;
-  border: 0.5px solid #42546680;
+  padding: 14px 16px;
+  border-radius: 50px;
+  border: 0.5px solid #42546660;
   outline: none;
   min-width: 300px;
 }
+.input::placeholder {
+  color: #425466a9;
+  font-size: 13px;
+}
 .submitBtn {
-  padding: 16px 16px;
-  border-radius: 10px;
-  border: 0.5px solid #42546680;
+  padding: 14px 16px;
+  border-radius: 50px;
+  border: 0.5px solid #0e0e0e;
   outline: none;
   min-width: 300px;
-  background-color: #2d3291;
+  background-color: #0e0e0e;
   color: #fff;
   cursor: pointer;
   transition: var(--transition);
 }
-.content {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: space-between;
-}
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
   font-size: 1rem;
   text-align: left;
   background-color: #f9f9f9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  width: 49%;
-  width: fit-content;
+  height: fit-content;
 }
 
 .table caption {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 0;
-  background-color: #2d3291;
+  background-color: #0e0e0e;
   color: #fff;
   text-align: center;
 }
 
 .table thead {
-  background-color: #2d3291;
+  background-color: #0e0e0e;
   color: #fff;
 }
 
@@ -105,7 +118,7 @@
   border: none;
   color: white;
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 0.9rem;
   transition: background-color 0.2s ease-in-out;
@@ -113,10 +126,6 @@
 
 .deleteBtn:hover {
   background-color: #e60000;
-}
-
-.deleteBtn i {
-  font-size: 1rem;
 }
 
 .deleteBtn:focus {
@@ -129,7 +138,7 @@
   border: none;
   color: white;
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 0.9rem;
   transition: background-color 0.2s ease-in-out;
@@ -142,4 +151,11 @@
 .actions {
   display: flex;
   gap: 10px;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

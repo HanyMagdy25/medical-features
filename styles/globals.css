@@ -74,6 +74,7 @@ a {
 .swiper-pagination-bullet-active {
   background: var(--primary-color) !important;
 }
+
 @media screen and (min-width: 992px) {
   .swiper-pagination {
     display: none;

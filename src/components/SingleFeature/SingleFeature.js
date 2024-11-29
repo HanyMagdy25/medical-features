@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "./SingleFeature.module.css";
 import hospitalData from "@/data";
-import UserIcon from "@/src/assets/user.svg";
+
 const SingleFeature = () => {
   const [singleFeatureData, setSingleFeatureData] = useState(null);
   const [error, setError] = useState(null);

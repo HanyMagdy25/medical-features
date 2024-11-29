@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./FeaturesCard.module.css";
-import Image from "next/image";
 import Link from "next/link";
-import UserIcon from "@/src/assets/user.svg";
-// import ArrowRight from "@/src/assets/arrow-right.svg";
+
 const FeaturesCard = ({ item }) => {
+  const Icon = item?.icon;
   return (
     <div className={styles.featuresCard}>
       <div className={styles.inner}>
         <div className={styles.icon}>
-          <UserIcon />
+          {/* {item.icon} */}
+          {/* <Icon /> */}
+          {Icon && <Icon className={styles.iconSvg} />} {/* Render icon */}
         </div>
         <h2 className={styles.title}>{item?.feature}</h2>
         <p className={styles.description}>{item?.description}</p>

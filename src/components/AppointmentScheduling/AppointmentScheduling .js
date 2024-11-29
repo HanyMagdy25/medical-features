@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./AppointmentScheduling.module.css";
 import appointmentData from "@/appointmentData";
+import toast from "react-hot-toast";
 const AppointmentScheduling = () => {
   const [appointments, setAppointments] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
@@ -34,16 +35,18 @@ const AppointmentScheduling = () => {
             appointment.id === formData.id ? formData : appointment
           )
         );
+        toast.success("Appointment updated successfully!");
         setIsEditing(false);
       } else {
         // Add a new appointment
         setAppointments((prev) => [...prev, formData]);
+        toast.success("Appointment scheduled successfully!");
       }
 
       // Reset the form data
       setFormData({ id: uuidv4(), patientName: "", doctorName: "", date: "" });
     } catch (err) {
-      console.error("Failed to submit appointment");
+      toast.error("Failed to submit appointment");
     }
   };
 
@@ -56,11 +59,12 @@ const AppointmentScheduling = () => {
     setAppointments((prev) =>
       prev.filter((appointment) => appointment.id !== id)
     );
+    toast.success("Appointment deleted successfully!");
   };
 
   return (
     <div className={styles.container}>
-      <h1>Appointment Scheduling</h1>
+      {/* <h1>Appointment Scheduling</h1> */}
       <div className={styles.content}>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.formGroup}>
@@ -70,6 +74,7 @@ const AppointmentScheduling = () => {
             <input
               id="patientName"
               type="text"
+              placeholder="Enter Patient Name"
               className={styles.input}
               value={formData.patientName}
               onChange={(e) =>
@@ -85,6 +90,7 @@ const AppointmentScheduling = () => {
             <input
               id="doctorName"
               type="text"
+              placeholder="Enter Doctor Name"
               className={styles.input}
               value={formData.doctorName}
               onChange={(e) =>

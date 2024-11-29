@@ -1,3 +1,14 @@
+import Icon1 from "./src/assets/iconCard (1).svg";
+import Icon2 from "./src/assets/iconCard (2).svg";
+import Icon3 from "./src/assets/iconCard (3).svg";
+import Icon4 from "./src/assets/iconCard (4).svg";
+import Icon5 from "./src/assets/iconCard (5).svg";
+import Icon6 from "./src/assets/iconCard (6).svg";
+import Icon7 from "./src/assets/iconCard (7).svg";
+import Icon8 from "./src/assets/iconCard (8).svg";
+import Icon9 from "./src/assets/iconCard (9).svg";
+import Icon10 from "./src/assets/iconCard (10).svg";
+import Icon11 from "./src/assets/iconCard (11).svg";
 const generateSlug = (feature) => {
   return feature
     .toLowerCase()
@@ -5,7 +16,6 @@ const generateSlug = (feature) => {
     .replace(/[^\w\-]+/g, "") // Remove non-alphanumeric characters (except hyphens)
     .replace(/--+/g, "-"); // Replace multiple hyphens with one
 };
-
 const hospitalFeatures = [
   {
     feature: "Patient Registration",
@@ -17,6 +27,7 @@ const hospitalFeatures = [
       "Insurance verification",
       "Medical history form",
     ],
+    icon: Icon1,
   },
   {
     feature: "Appointment Scheduling",
@@ -28,6 +39,7 @@ const hospitalFeatures = [
       "Appointment reminders",
       "Doctor schedule management",
     ],
+    icon: Icon2,
   },
   {
     feature: "Medical Record Management",
@@ -39,6 +51,7 @@ const hospitalFeatures = [
       "Medical history updates",
       "Prescription management",
     ],
+    icon: Icon3,
   },
   {
     feature: "Billing and Payment Processing",
@@ -46,6 +59,7 @@ const hospitalFeatures = [
     description:
       "Patients can view their bills and pay online through the application.",
     subModules: ["Bill generation", "Payment processing", "Payment history"],
+    icon: Icon4,
   },
   {
     feature: "Reports and Analytics",
@@ -57,6 +71,7 @@ const hospitalFeatures = [
       "Appointment history report",
       "Revenue report",
     ],
+    icon: Icon5,
   },
   {
     feature: "Prescription Management",
@@ -68,6 +83,7 @@ const hospitalFeatures = [
       "Prescription history",
       "Refill requests",
     ],
+    icon: Icon6,
   },
   {
     feature: "Lab and Test Results",
@@ -79,6 +95,7 @@ const hospitalFeatures = [
       "Test result viewing",
       "Result management",
     ],
+    icon: Icon7,
   },
   {
     feature: "Electronic Health Records",
@@ -86,6 +103,7 @@ const hospitalFeatures = [
     description:
       "The application can store and manage electronic health records for patients, including medical history, diagnoses, and treatment plans.",
     subModules: ["EHR creation", "EHR updates", "EHR viewing"],
+    icon: Icon8,
   },
   {
     feature: "Inventory Management",
@@ -93,6 +111,7 @@ const hospitalFeatures = [
     description:
       "The application can manage inventory for medical supplies and equipment, including tracking usage and reordering as needed.",
     subModules: ["Inventory tracking", "Reorder management", "Usage reports"],
+    icon: Icon9,
   },
   {
     feature: "Staff Management",
@@ -104,6 +123,7 @@ const hospitalFeatures = [
       "Payroll management",
       "Performance evaluation",
     ],
+    icon: Icon10,
   },
   {
     feature: "Telemedicine",
@@ -115,6 +135,7 @@ const hospitalFeatures = [
       "Video conferencing",
       "Remote diagnosis",
     ],
+    icon: Icon11,
   },
   {
     feature: "Emergency Management",
@@ -122,6 +143,7 @@ const hospitalFeatures = [
     description:
       "The application can provide emergency alerts and notifications to staff and patients in case of a crisis or disaster.",
     subModules: ["Emergency alerts", "Disaster management", "Crisis response"],
+    icon: Icon3,
   },
 ];
 
