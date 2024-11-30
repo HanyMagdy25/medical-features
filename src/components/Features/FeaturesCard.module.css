@@ -6,8 +6,8 @@
   width: 32%;
 }
 .icon {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background: #f3f3f5;
   display: flex;
@@ -15,11 +15,13 @@
   justify-content: center;
   margin-bottom: 24px;
 }
+.icon svg {
+  transform: scale(0.7);
+}
 .title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: #000;
-  margin-bottom: 6px;
   transition: var(--transition);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -27,11 +29,10 @@
   -webkit-line-clamp: 1; /* Number of lines to show */
   line-clamp: 1;
   text-overflow: ellipsis;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .description {
-  margin-bottom: 20px;
-
+  margin-bottom: 24px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -40,16 +41,21 @@
   text-overflow: ellipsis;
 }
 .viewMore {
-  color: #ce0202;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   transition: var(--transition);
   outline: none;
   border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
 }
 .viewMore:hover {
-  padding-left: 8px;
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 
 /* Media Queries */

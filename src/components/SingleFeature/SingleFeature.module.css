@@ -19,7 +19,7 @@
   font-size: 30px;
   font-weight: 600;
   /* color: #202020; */
-  color: #ce0202;
+  /* color: #ce0202; */
   margin-bottom: 6px;
   transition: var(--transition);
   display: -webkit-box;
@@ -35,19 +35,23 @@
 .description {
   margin-bottom: 20px;
   position: relative;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #333;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 20px;
+
+  font-size: 18px;
+  color: #999999;
 }
 .description::before {
   content: "";
   position: absolute;
   width: 60px;
   height: 4px;
-  background-color: #ce0202;
+  /* background-color: #ce0202; */
+  background-color: var(--secondary-color);
   bottom: 0;
   border-radius: 20px;
   left: 50%;

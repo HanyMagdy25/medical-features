@@ -4,6 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary-color: #ffd500;
+  --secondary-color: #0099ff;
+  --light-red-color: #D80027;
+  --dark-red-color: #A2001D;
   --transition: all 0.3s;
 }
 html,
